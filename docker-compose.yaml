@@ -23,6 +23,8 @@ services:
     environment:
       - 'OLLAMA_BASE_URL=http://ollama:11434'
       - 'WEBUI_SECRET_KEY='
+      - 'ENABLE_MEMORY=true'
+      - 'ENABLE_PERSISTENT_MEMORY=true'
     extra_hosts:
       - host.docker.internal:host-gateway
     restart: unless-stopped
